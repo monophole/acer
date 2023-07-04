@@ -1,0 +1,353 @@
+@font-face {
+    font-family:acer;
+    src: url(./DM_Sans/DMSans-Italic.ttf);
+}
+@font-face {
+    font-family: justfont;
+    src: url(./Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --color:#80C343;
+}
+body{
+    height: 500vh;
+}
+.header{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    background: #eee;
+    font-size: 14px;
+}
+.collection{
+    display: flex;
+    gap: 30px;
+    padding-left: 13px;
+    align-items: center;
+}
+.item{
+    list-style: none;
+    color: #555;
+    position: relative;
+    border-bottom: 3px solid transparent;
+    padding: 18px 0;
+}
+.item:hover{
+    border-bottom: 3px solid var(--color);
+    padding: 18px 0;
+}
+.with__icons{
+    display: flex;
+    padding-left: 800px;
+    gap: 10px;
+    align-items: center;
+}
+.item ol{
+    position: absolute;
+    top: 100%;
+    left: -350%;
+    background: #fff;
+    color: #333;
+    width: 200px;
+    list-style: none;
+    transform: scaleY(0);
+    box-shadow: 0 0 10px #888;
+    transform-origin: top;
+    overflow: hidden;
+}
+.item:hover ol{
+    transform: scaleY(1);
+}
+.item ol li{
+    padding: 20px 12px;
+    border-bottom:1px solid #ccc
+}
+.item ol li:hover{
+    background: #ddd;
+    cursor: pointer;
+}
+.item ol li:nth-child(1) i{
+    padding: 5px 7px;
+    border-radius:50%;
+    background: #333;
+    color: #fff;
+    margin-right: 10px;
+}
+.item ol li:nth-child(2) i{
+    margin-left: 7px;
+    margin-right: 11px;
+}
+.item ol li:nth-child(3) i{
+    padding: 5px 9px;
+    border-radius:50%;
+    background: #333;
+    color: #fff;
+    margin-right: 10px;
+}
+
+
+.hover{
+    position: relative;
+}
+.hover ol{
+    position: absolute;
+    top: 100%;
+    left:-1800%;
+    background: #fff;
+    color: #333;
+    width: 500px;
+    list-style: none;
+    transform: scaleY(0);
+    transform-origin: top;
+    overflow: hidden;
+}
+.hover:hover ol{
+    transform: scaleY(1);
+}
+.hover ol li{
+    padding: 40px 70px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.hover ol li:hover{
+    background: #ddd;
+    cursor: pointer;
+}
+.logo{
+    font-family: acer;
+}
+
+
+
+.navbar{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    padding: 0 3%;
+}
+.logo{
+    font-size: 40px;
+    color: var(--color);
+    flex: .5;
+}
+.collection1{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.item1{
+    list-style: none;
+    color: #333;
+    border-bottom:3px solid transparent;
+    padding: 22px 0;
+}
+.item1:hover{
+    border-bottom:3px solid var(--color);
+    padding: 22px 0;
+
+}
+.collection1 select{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #555;
+    border-bottom:3px solid transparent;
+    padding: 22px 0;
+}
+.collection1 select:hover{
+    border-bottom:3px solid var(--color);
+    padding: 22px 0;
+}
+.collection1 i{
+    transform: translateX(400px);
+}
+.banner{
+    width: 100%;
+    height: 550px;
+    background: url(./image/photo_2023-06-16_20-43-56.jpg) no-repeat center/cover;
+    padding-left: 15%;
+}
+.banner h1{
+    color: #fff;
+    padding-top: 155px;
+    font-size: 40px;
+}
+.banner p{
+    color: #fff;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.btn{
+    padding: 17px 25px;
+    font-weight: 700;
+    font-size: 17px;
+    margin-top: 40px;
+}
+.btn:hover{
+    color: #fff;
+    background: #000;
+    border: 2px solid #fff;
+}
+.title{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 40px;
+    font-family: justfont;
+    color: #222;
+}
+
+.elements{
+    width: 100%;
+    height: 350px;
+    padding: 0 5%;
+    display: flex;
+    gap: 10px;
+}
+.products{
+    width: 18%;
+    height: 200px;
+    margin-top: 50px;
+}
+.products img{
+    width: 215px;
+    height: 155px;
+    display: flex;
+    margin: auto;
+}
+.products p{
+    text-align: center;
+    padding-top: 10px;
+}
+.products:hover{
+    font-weight: 600;
+}
+
+
+.cards{
+    width: 100%;
+    height: 400px;
+    padding: 0 3.5%;
+    display: flex;
+    gap: 15px;
+}
+.box{
+    width: 50%;
+    height: 350px;
+}
+.cards .box:first-child{
+    background: url(./image/photo_2023-06-16_20-47-01.jpg) no-repeat center/cover;
+}
+.box__img{
+    width: 100%;
+    height: 100%;
+    background: #fff4;
+    transition: .3s;
+}
+.box__img:hover{
+    background: #fffd;
+    border-top: 4px solid var(--color);
+    box-shadow: 0 10px 15px #555
+}
+.cards .box:last-child{
+    background: url(./image/photo_2023-06-16_20-47-04.jpg) no-repeat center/cover;
+}
+.inner__box{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+.inner__box:hover{
+    transform: translateY(-80px);
+    cursor: pointer;
+}
+.inner__box h1{
+    text-align: center;
+    padding-top: 23%;
+    font-size: 30px;
+    transition: .3s;
+
+}
+.inner__box p{
+    padding: 20px 0;
+    opacity: 0;
+    text-align: center;
+    font-size: 20px
+
+}
+.inner__box:hover p{
+    opacity: 1;
+}
+.inner__box h3{
+    width: 92px;
+    margin: auto;
+    margin-top: 30px;
+    opacity: 0;
+    padding-bottom: 8px;
+    border-bottom:2px solid #80C343;
+}
+.inner__box:hover h3{
+    opacity: 1;
+}
+.inner__box h3:hover{
+    border-bottom: 2px solid #000;
+}
+
+
+
+
+.with__scale{
+    width: 100%;
+    height: 600px;
+    padding: 0px 6%;
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+}
+.container{
+    width: 25%;
+    height: 480px;
+    overflow: hidden;
+}
+.container img{
+    width: 320px;
+    height: 320px;
+    display: flex;
+    margin: auto;
+    object-fit: cover;
+    transition: .4s;
+}
+.container img:hover{
+    transform: scale(1.3);
+}
+.container h2{
+    font-family: justfont;
+    font-size: 20px;
+    color: #222;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-weight:700;
+}
+.container p{
+    font-family: justfont;
+    color: #333;
+    padding-bottom: 30px;
+}
+.container h3{
+    width: 42px;
+    font-family: justfont;
+    font-size: 16px;
+    padding-bottom: 7px;
+    border-bottom:2px solid var(--color)
+}
+.container h3:hover{
+    border-bottom:2px solid #000;
+}
